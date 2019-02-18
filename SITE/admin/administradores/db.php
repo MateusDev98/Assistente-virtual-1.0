@@ -55,7 +55,7 @@ $admin_create = function() use ($conn){
 	$stmt = $conn->prepare($sql);
 	$stmt->bind_param('ss', $data['code'], $data['pass']);
 
-	flash('Usuário adicionado!','success');
+	flash('Adicionado!','success');
 
 	return $stmt->execute();
 
@@ -82,7 +82,7 @@ $admin_edit = function($id) use ($conn){
 		$stmt->bind_param('si', $data['code'], $id);
 	}
 
-	flash('Usuário atualizado!','info');
+	flash('Atualizado!','info');
 
 	return $stmt->execute();
 
@@ -95,7 +95,7 @@ $admin_remove = function($id) use ($conn){
 	$stmt = $conn->prepare($sql);
 	$stmt->bind_param('i',$id);
 
-	flash('Usuário removido!','notice');
+	flash('Removido!','info');
 
 	return $stmt->execute();
 

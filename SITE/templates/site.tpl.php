@@ -21,7 +21,7 @@
 						<li><a href="/contact">Contato</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" rate="button" 
-								aria-haspopup="true" aria-expanded="false"> Perfil <span class="caret"></span></a>
+								aria-haspopup="true" aria-expanded="false"> <?php echo $_SESSION['user']['name'];?> Seu Perfil <span class="caret"></span></a>
 								<ul class="dropdown-menu" style="text-align: center">
 									<li>
 										<a href="/edit">Editar</a>
