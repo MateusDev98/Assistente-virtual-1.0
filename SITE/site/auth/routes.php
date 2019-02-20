@@ -21,7 +21,11 @@ if(resolved('/site/auth/cadas')){
 
 	render('/site/auth/cadas','site/cadas');
 
-} elseif(resolved('/site/auth/login')){
+} elseif(resolved('/site/auth/contact')){
+
+	render('site/auth/contact','site/contact');
+
+}elseif(resolved('/site/auth/login')){
 	//Buscamos o usuário no banco
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

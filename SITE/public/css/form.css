@@ -72,7 +72,7 @@
         position: absolute;
         transform: translate(-50%,-50%);
         padding: 30px;
-        background:rgb(0,143,179,.9);
+        background:rgb(0,179,0,.6);
         box-sizing: border-box;
         box-shadow: 0 25px 25px rgba(0,0,0,.4);
         border-radius: 10px;

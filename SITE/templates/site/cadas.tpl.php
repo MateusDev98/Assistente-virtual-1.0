@@ -16,11 +16,19 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
 					<a href="" class="navbar-brand"> LOGO </a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav menu">
-							<li class="dropdown">
+									<li><a href="">Como funciona</a></li>
+									<li><a href="/site/auth/contact">Contato</a></li>
+							<li class="dropdown" style="margin-right: 50px;">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" rate="button" 
 								aria-haspopup="true" aria-expanded="false"> Entrar <span class="caret"></span></a>
 									<ul class="dropdown-menu">
@@ -37,7 +45,6 @@
 										</form>
 									</ul>
 							</li>
-							<li><a href="">Contato</a></li>
 						</ul>
 				</div>
 			</div>

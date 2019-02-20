@@ -18,13 +18,13 @@
 			<div class="container">
 					<a href="/" class="navbar-brand"> LOGO  </a>
 					<ul class="nav navbar-nav menu">
-						<li><a href="/contact">Contato</a></li>
+						<li class="<?php if(resolved('/into_contact')):?> active <?php endif; ?>"><a href="/into_contact"> Contato </a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" rate="button" 
-								aria-haspopup="true" aria-expanded="false"> <?php echo $_SESSION['user']['name'];?> Seu Perfil <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle " data-toggle="dropdown" rate="button" 
+								aria-haspopup="true" aria-expanded="false"> <?php echo $_SESSION['user']['name'];?> <span class="caret"></span></a>
 								<ul class="dropdown-menu" style="text-align: center">
 									<li>
-										<a href="/edit">Editar</a>
+										<a href="/edit">Dados Pessoais</a>
 									</li>
 									<li class="divider" role="separator"></li>
 									<a href="/site/auth/logout_user" class="btn btn-danger text-center"> Sair <i class="fas fa-sign-out-alt"></i></a>

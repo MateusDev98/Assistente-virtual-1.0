@@ -4,14 +4,15 @@
 
 protect_login();
 
+
 //Verificando se as páginas existem
 //Verificamos se foi solicitado a página inicial e exibimos 
 if(resolved('/')){
 	render('/site/home','site');
 //Verficamos se foi solicitado a pagina contact e exibimos
-}elseif(resolved('/contact')){
+}elseif(resolved('/into_contact')){
 
-	render('/site/contact','site');
+	render('/site/into_contact','site');
 
 }elseif(resolved('/edit')){
 
