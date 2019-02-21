@@ -4,40 +4,62 @@ require __DIR__ .'/db.php';
 
 if(resolved('/site/auth/cadas')){
 
-	if($_SERVER['REQUEST_METHOD'] === 'POST'){
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-		if($users_cadas()){
+	if($users_cadas()){
 
-			flash('Seja bem-vindo','success');
 			return header('location: /');
 
-		}elseif($login_user()){
+	}elseif($login_user()){
 
-				flash('Login aprovado!','success');
-				return header('location: /');
-		}
+			flash('Bem vindo!','success');
+			return header('location: /');
+	}elseif(!($login_user())){
 
+		flash('Usuário incorreto','error');
+		return header('location: /');
 	}
+
+}
 
 	render('/site/auth/cadas','site/cadas');
 
 } elseif(resolved('/site/auth/contact')){
 
+	if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+	if($login_user()){
+
+			flash('Bem vindo!','success');
+			return header('location: /');
+
+	}elseif(!($login_user())){
+
+		flash('Usuário incorreto','error');
+		return header('location: /site/auth/contact');
+	}
+
+	}
+
 	render('site/auth/contact','site/contact');
 
-}elseif(resolved('/site/auth/login')){
-	//Buscamos o usuário no banco
-	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+}elseif(resolved('/site/auth/how_to_work')){
 
-		if($login_user()){
+	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-			 flash('Login aprovado','success');
-			 return header('location: /');
-		}
-		
-		flash('Usuário não existe!','error');
+	if($login_user()){
+
+			flash('Bem vindo!','success');
+			return header('location: /');
+
+	}elseif(!($login_user())){
+
+		flash('Usuário incorreto','error');
+		return header('location: /site/auth/how_to_work');
 	}
-	render('/site/auth/login','site/login');
+	}
+
+	render('site/auth/how_to_work','site/how_to_work');
 
 } elseif(resolved('/site/auth/logout_user')){
 

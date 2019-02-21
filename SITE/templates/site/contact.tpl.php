@@ -22,12 +22,12 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-					<a href="" class="navbar-brand"> LOGO </a>
+					<a href="/site/auth/cadas" class="navbar-brand"> LOGO </a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav menu">
-									<li><a href="">Como funciona</a></li>
-									<li><a href="/site/auth/contact">Contato</a></li>
+									<li><a href="/site/auth/how_to_work">Como funciona</a></li>
+									<li class="active"><a href="/site/auth/contact">Contato</a></li>
 							<li class="dropdown" style="margin-right: 50px;">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" rate="button" 
 								aria-haspopup="true" aria-expanded="false"> Entrar <span class="caret"></span></a>

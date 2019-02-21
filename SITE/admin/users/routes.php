@@ -13,11 +13,11 @@ if(resolved('/admin/users')){
 	}
 	render('/admin/users/create','admin');
 
-}elseif ($params = resolved('/admin/users/(\d+)')) { //(\d+)  a letra só aceita números e o sinal de mais significa ou ou mais digitos
+}else if ($params = resolved('/admin/users/(\d+)')) { //(\d+)  a letra só aceita números e o sinal de mais significa ou ou mais digitos
 	$user = $users_view($params[1]);
 	render('/admin/users/view','admin', compact('user'));
 
-}elseif ($params = resolved('/admin/users/(\d+)/edit')) {
+}else if ($params = resolved('/admin/users/(\d+)/edit')) {
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		$users_edit($params[1]);
 		return header('location: /admin/users/' . $params[1]);	
@@ -25,7 +25,7 @@ if(resolved('/admin/users')){
 	$user = $users_view($params[1]);
 	render('/admin/users/edit','admin',compact('user'));
 
-}elseif ($params = resolved('/admin/users/(\d+)/delete')) {
+}else if ($params = resolved('/admin/users/(\d+)/delete')) {
 	$users_remove($params[1]);//O primeiro retorna o que foi digitado
 	return header('location:/admin/users');
 }

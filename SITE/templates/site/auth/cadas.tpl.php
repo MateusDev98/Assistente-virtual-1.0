@@ -1,8 +1,8 @@
 <section>
 <div class="container">
 		<div class="jumbotron col-lg-5">
-			<h1>Sobre Nós</h1>
-			<p>Alguma coisa....</p>
+			<h3>Nunca mais atrase seus boletos com TickOut!</h3>
+			<h3>TickOut você no controle das suas contas!</h3>
 		</div>
 <div class="row"> 
 <div class="col-lg-offset-3  col-lg-4 box animated">  

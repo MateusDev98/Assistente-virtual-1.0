@@ -66,6 +66,7 @@ $users_cadas = function() use ($conn){
 	if($_SESSION['user']){
 
 		$user = $_SESSION['user'];
+		header('location: /');
 	}
 
 };

@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand"> LOGO  </a>
+          <a href="/site/auth/cadas" class="navbar-brand"> LOGO  </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         </div>
