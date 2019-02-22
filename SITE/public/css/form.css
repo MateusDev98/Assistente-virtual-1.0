@@ -5,7 +5,7 @@
       body{
         /*background-color: #000;*/
         /*background-color: #00334d;*/
-        background-image: url(/img/10.jpg);
+        background-image: url(/img/7.jpg);
         background-position: top left;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -21,9 +21,6 @@
         margin-right: 5px;
         color:#fff; 
         background: transparent;
-      }
-      a{
-        color: #000;
       }
       .font{
         color: #fff;
@@ -58,13 +55,26 @@
           .jumbotron{
             visibility: hidden;
           }
-          footer{
+         footer{
+            visibility: hidden;
+          }
+          .menu_ul{
+            float: left;
+            font-size: 12px;
+          }
+          .menu_li{
+            font-size: 9px;
+          }
+          .dropdown{
+            float: right;
+          }
+          .img{
             visibility: hidden;
           }
         }   
       .jumbotron{
-        background-color: rgba(255,255,255, .9);
-        margin-top: 20%;
+        background-color: transparent;
+        margin-top: 2%;
       }
       .box{
         margin-top: 25%;
@@ -73,7 +83,7 @@
         transform: translate(-50%,-50%);
         padding: 30px;
         /*background:rgba(0,179,0,.6);*/
-        background:rgba(0,102,255,.9);
+        background:rgba(255,255,255,.8);
         box-sizing: border-box;
         box-shadow: 0 25px 25px rgba(0,0,0,.4);
         border-radius: 10px;

@@ -1,31 +1,30 @@
 <section>
 <div class="container">
-		<div class="jumbotron col-lg-5">
-			<h3>Nunca mais atrase seus boletos com TickOut!</h3>
-			<h3>TickOut você no controle das suas contas!</h3>
+		<div class="col-lg-6">
+			<img src="/img/icon.png" style="outline: none;" class="img-responsive img">
 		</div>
 <div class="row"> 
 <div class="col-lg-offset-3  col-lg-4 box animated">  
 <form method="POST">
-  <h2 class="font" style="cursor: default;">Cadastre-se</h2>
+  <h2 class="font" style="cursor: default; color: #000;">Cadastre-se</h2>
 <div class="inputBox">
 <input name="email" type="email" required autocomplete="off">
-<label><span class="far fa-envelope" style="color: #fff"></span> E-mail </label>
+<label style="color: #000;"><span class="far fa-envelope" style="color: #000"></span> E-mail </label>
 </div>
 <div class="inputBox">
 <input name="name" type="text" required autocomplete="off">
-<label><span class="far fa-user" style="color: #fff"></span> Usuário </label>
+<label style="color: #000;"><span class="far fa-user" style="color: #000"></span> Usuário </label>
 </div>
 <div class="inputBox">
 <input name="pass" type="password" required autocomplete="off">
-<label><span class="fas fa-key"></span> Senha </label>
+<label style="color: #000;"><span class="fas fa-key"></span> Senha </label>
 </div>
-<button type="submit" class="btn btn-warning button center-block" >Cadastrar <span class="glyphicon glyphicon-ok"></button><br><center> <label >Você já possui uma conta?</label> <a href="/site/auth/login">Entrar.</a>
+<button type="submit" class="btn btn-primary button center-block" >Cadastrar <span class="glyphicon glyphicon-ok"></button><br><center> <label style="color:#000;">Você já possui uma conta?</label> <a href="/site/auth/login">Entrar.</a>
 </form>	
 <a class="center-block" data-toggle="modal" data-target="#mymodal" style="cursor: pointer;">
  Termos e condições.
 </a>
-<h4 style="color: #fff"> Fale conosco.</h4>
+<h4 style="color: #000"> Fale conosco.</h4>
 <a class="fab fa-facebook-f"></a>
 <a class="fab fa-twitter"></a>
 <a class="fab fa-google-plus-g"></a>
