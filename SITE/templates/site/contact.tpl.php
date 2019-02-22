@@ -28,22 +28,8 @@
 						<ul class="nav navbar-nav menu">
 									<li><a href="/site/auth/how_to_work">Como funciona</a></li>
 									<li class="active"><a href="/site/auth/contact">Contato</a></li>
-							<li class="dropdown" style="margin-right: 50px;">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" rate="button" 
-								aria-haspopup="true" aria-expanded="false"> Entrar <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<form method="POST" class="navbar-form navbar-left">
-											<div class="form-group">
-												<label for="user_email" style="color: #000"><i class="far fa-envelope"></i> E-mail</label>
-												<input type="text" name="email" id="user_email" class="form-control" placeholder="e-mail...">
-											</div><br><br>
-											<div class="form-group">
-												<label for="user_pass" style="color: #000"><i class="fas fa-key"></i> Senha</label>
-												<input type="password" name="pass" id="user_pass" class="form-control" placeholder="senha...">
-											</div><br><br>
-											<button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-sign-in-alt"></i> Entrar</button>
-										</form>
-									</ul>
+							<li class="acitve" style="margin-right: 50px;">
+								 <a href="/site/auth/login">Entrar</a> 
 							</li>
 						</ul>
 				</div>

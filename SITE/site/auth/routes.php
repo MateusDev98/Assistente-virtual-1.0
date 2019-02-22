@@ -26,24 +26,31 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 } elseif(resolved('/site/auth/contact')){
 
+
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-	if($login_user()){
+		$from = filter_input(INPUT_POST, 'from');
+		$subject = filter_input(INPUT_POST, 'subject');
+		$message = filter_input(INPUT_POST, 'message');
+		//Cria-se uma variavel para poder responder o email enviado para pessoa certa, também por a versão do php
+		//Neste header especifico quem mandou o email pra quem eu vou responder e qual que foi a fonte, colocando a variavel como ultimo paremetro sendo ele opcional 
+		$headers = 'From: ' . $from . "\r\n" . 
+		"Reply-To: " . $from . "\r\n" . 
+		"X-Mailer: PHP/" . phpversion(); 
 
-			flash('Bem vindo!','success');
-			return header('location: /');
+		//Primeiro parametro é qual o emaill que vai receber este email é um email fixo sendo ele harcoded
+		//
+		if(mail('tiketout@outlook.com', $subject, $message, $headers)){
+			flash('Obrigado por sua opnião!','success');
+		}else{
+			flash('Falha ao enviar','error');
+		}
+		return header("location: /site/auth/contact");
 
-	}elseif(!($login_user())){
-
-		flash('Usuário incorreto','error');
-		return header('location: /site/auth/contact');
 	}
-
-	}
-
 	render('site/auth/contact','site/contact');
 
-}elseif(resolved('/site/auth/how_to_work')){
+} elseif(resolved('/site/auth/how_to_work')){
 
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
