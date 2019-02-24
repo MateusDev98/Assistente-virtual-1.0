@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sun Dev</title>
+<title> TicketOut </title>
 <!-- Bootstrap -->
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/resources/fontawesome/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="/resources/pnotify/pnotify.custom.min.css">
-<link rel="stylesheet" href="/css/form.css"><!--formatação da página-->
+<link rel="stylesheet" href="/css/contact.css"><!--formatação da página-->
 </head>
 <body>
 	<header>
@@ -22,7 +22,7 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-					<a href="/site/auth/cadas" class="navbar-brand"> LOGO </a>
+					<a href="/site/auth/cadas" class="navbar-brand"> <img src="/img/3.png" class="img-responsive"> </a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav menu">

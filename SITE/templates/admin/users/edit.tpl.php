@@ -1,7 +1,5 @@
 <h3 class="mb-5">Edição de usuários <i class="fas fa-user-edit"></i></h3>
 <a href="/admin/users/<?php echo $data['user']['id'];?>" class="btn btn-dark btn-sm mb-5"><i class="fas fa-caret-left"></i> Voltar</a>
-
-
 <form method="POST">
 	<div class="form-group">
 		<label for="users_name"><strong> Nome -</strong></label>

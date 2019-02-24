@@ -1,3 +1,4 @@
+<main>
 <section>
 <div class="container">
 		<div class="col-lg-6">
@@ -9,15 +10,19 @@
   <h2 class="font" style="cursor: default; color: #000;">Cadastre-se</h2>
 <div class="inputBox">
 <input name="email" type="email" required autocomplete="off">
-<label style="color: #000;"><span class="far fa-envelope" style="color: #000"></span> E-mail </label>
+<label style="color: black;"><span class="far fa-envelope" style="color: #000"></span> E-mail *</label>
+</div>
+<div class="inputBox">
+<input name="phone" type="text" required autocomplete="off">
+<label style="color: black;"><i class="fas fa-phone" style="color: #000"></i> Telefone (Opcional) </label>
 </div>
 <div class="inputBox">
 <input name="name" type="text" required autocomplete="off">
-<label style="color: #000;"><span class="far fa-user" style="color: #000"></span> Usuário </label>
+<label style="color: black;"><span class="far fa-user" style="color: #000"></span> Usuário *</label>
 </div>
 <div class="inputBox">
 <input name="pass" type="password" required autocomplete="off">
-<label style="color: #000;"><span class="fas fa-key"></span> Senha </label>
+<label style="color: black;"><span class="fas fa-key"></span> Senha *</label>
 </div>
 <button type="submit" class="btn btn-primary button center-block" >Cadastrar <span class="glyphicon glyphicon-ok"></button><br><center> <label style="color:#000;">Você já possui uma conta?</label> <a href="/site/auth/login">Entrar.</a>
 </form>	

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Dev</title>
+<title> TicketOut </title>
 <!-- Bootstrap -->
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/resources/fontawesome/css/all.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-					<a href="/site/auth/cadas" class="navbar-brand"> <img src="/img/3.png" class="img-responsive"> </a>
+					<a href="/site/auth/cadas" class="navbar-brand"> <img src="/img/3.png" class="img-responsive img"> </a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav menu">
@@ -50,13 +50,11 @@
 			</div>
 		</nav>
 	</header>
-<main>
 	<?php require $content; ?>
-</main>
 <footer class='col-sm-18'>
 <label class="footer_content">Copyright
 <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true" style="color: #fff; font-size: 10px"></span>
-2018 Challenge YOU. Todos os direitos reservados</label>
+<?php echo date('Y');?> Challenge YOU. Todos os direitos reservados</label>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><!--linkando com o JS externo-->

@@ -1,7 +1,6 @@
 <?php
 
 
-
 $login_user = function() use ($conn){
 
 	$email = filter_input(INPUT_POST, 'email');
@@ -44,8 +43,9 @@ $users_cadas = function() use ($conn){
 	$email = filter_input(INPUT_POST, 'email');
 	$pass = filter_input(INPUT_POST, 'pass');
 	$name = filter_input(INPUT_POST, 'name');
+	$phone = filter_input(INPUT_POST, 'phone');
 
-	$sql = 'INSERT INTO users(email,pass,name,created,updated) VALUES(?,?,?, NOW(), NOW())';
+	$sql = 'INSERT INTO users(email,pass,name,phone,created,updated) VALUES(?,?,?,?, NOW(), NOW())';
 
 	if(is_null($pass)){
 		flash('Preencha o campo da senha','error');
@@ -57,7 +57,7 @@ $users_cadas = function() use ($conn){
 	$pass = password_hash($pass, PASSWORD_DEFAULT);
 
 	$stmt = $conn->prepare($sql);
-	$stmt->bind_param('sss', $email, $pass, $name);
+	$stmt->bind_param('ssss', $email, $pass, $name, $phone);
 
 	// $stmt->execute();
 

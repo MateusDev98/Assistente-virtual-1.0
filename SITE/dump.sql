@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` VARCHAR(200) NOT NULL,
   `pass` VARCHAR(200) NOT NULL,
   `name` VARCHAR(200) NOT NULL,
+  `phone` VARCHAR(200) NOT NULL,
   `created` DATETIME NOT NULL,
   `updated` DATETIME NOT NULL,
   PRIMARY KEY (`id`))

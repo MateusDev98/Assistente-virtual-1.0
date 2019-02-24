@@ -15,7 +15,7 @@ function setInternalServerError($errno = null, $errstr = null, $errfile = null, 
         $errfile = $err->getFile();//O arquivo que deu erro
         $errline = $err->getLine();//Linha do erro
     }
-    echo '<span style="font-weigth: bold; color: red">';
+    echo '<span style="font-weigth: bold; color: #fff">';
     switch ($errno) {
         case E_USER_ERROR:
             echo '<strong>ERROR</strong> [' . $errno . '] ' . $errstr . "<br>\n";

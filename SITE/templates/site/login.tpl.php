@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sun Dev</title>
+<title> TicketOut </title>
 <!-- Bootstrap -->
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="/resources/pnotify/pnotify.custom.min.css">
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="/site/auth/cadas" class="navbar-brand"> LOGO  </a>
+         <a href="/site/auth/cadas" class="navbar-brand"> <img src="/img/3.png" class="img-responsive"> </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         </div>
