@@ -1,5 +1,6 @@
+
 <h2 class="mb-5">Administradores <i class="fas fa-users-cog"></i></h2>
-<a href="/admin/administradores/create" class="btn btn-dark btn-sm mb-3">Novo <i class="fas fa-plus"></i></a>
+	<a href="/admin/administradores/create" class="btn btn-dark btn-sm mb-3">Novo <i class="fas fa-plus"></i></a>
 
 <table class="table table-hover">
 	<thead>

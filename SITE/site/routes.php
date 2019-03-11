@@ -14,7 +14,12 @@ if(resolved('/')){
 
 	render('/site/into_contact','site');
 
-}elseif(resolved('/edit')){
+}elseif(resolved('/view_tickets')){
+
+	render('/site/view_tickets','site');
+
+}
+elseif(resolved('/edit')){
 
 	render('/site/edit','site');
 

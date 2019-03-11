@@ -1,5 +1,6 @@
+
 <h3 class="mb-5">Edição <i class="fas fa-user-edit"></i></h3>
-<a href="/admin/administradores/<?php echo $data['admin']['id'];?>" class="btn btn-dark btn-sm mb-5"><i class="fas fa-caret-left"></i> Voltar</a>
+	<a href="/admin/administradores/<?php echo $data['admin']['id'];?>" class="btn btn-dark btn-sm mb-5"><i class="fas fa-caret-left"></i> Voltar</a>
 
 
 <form method="POST">

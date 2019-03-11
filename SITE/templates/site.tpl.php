@@ -27,6 +27,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav menu">
 						<li class="<?php if(resolved('/')):?> active <?php endif; ?>"><a href="/"> Inicio </a></li>
+						<li class="<?php if(resolved('/view_tickets')):?> active <?php endif; ?>"><a href="/view_tickets"> Meus boletos </a></li>
 						<li class="<?php if(resolved('/into_contact')):?> active <?php endif; ?>"><a href="/into_contact"> Contato </a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle " data-toggle="dropdown" rate="button" 
@@ -45,18 +46,18 @@
 		</nav>
 	</header> 
 <?php require $content ?>
-<footer class='col-sm-18'>
-<label class="footer_content">Copyright
-<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true" style="color: #fff; font-size: 10px"></span>
+	<footer class='col-sm-18'>
+		<label class="footer_content">Copyright
+		<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true" style="color: #fff; font-size: 10px"></span>
 <?php echo date('Y');?> Challenge YOU. Todos os direitos reservados</label>
-</footer>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><!--linkando com o JS externo-->
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><!--linkando com o JS externo-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/resources/pnotify/pnotify.custom.min.js"></script>
-<script>
+	</footer>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><!--linkando com o JS externo-->
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><!--linkando com o JS externo-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/resources/pnotify/pnotify.custom.min.js"></script>
+	<script>
 	  <?php flash(); ?>
-</script>
+	</script>
 </body>
 </html>

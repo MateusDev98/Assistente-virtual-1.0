@@ -21,7 +21,7 @@ elseif(resolved('/admin/auth.*')){ //A expressão '.*' o ponto casa qualquer car
 }elseif(resolved('/admin/pages.*')){ //A expressão '.*' o ponto casa qualquer caracter e o asterisco 1 ou +, ou seja qualuqer /admin/pages vai executar esse else if 
 	require __DIR__.'/pages/routes.php';
 	
-}elseif(resolved('/admin/users.*')){ //A expressão '.*' o ponto casa qualquer caracter e o asterisco 0 ou +, ou seja qualuqer /admin/pages vai executar esse else if 
+}elseif(resolved('/admin/users.*')){ //A expressão '.*' o ponto casa qualquer caracter e o asterisco 0 ou +, ou seja qualquer /admin/pages vai executar esse else if 
 	require __DIR__.'/users/routes.php';
 
 }elseif(resolved('/admin/administradores.*')){ //A expressão '.*' o ponto casa qualquer caracter e o asterisco 0 ou +, ou seja qualuqer /admin/pages vai executar esse else if 

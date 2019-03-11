@@ -1,5 +1,6 @@
+
 <h3 class="mb-5">Novo administrador.</h3>
-<a href="/admin/administradores" class="btn btn-dark btn-sm mb-5"><i class="fas fa-caret-left"></i> Voltar </a>
+	<a href="/admin/administradores" class="btn btn-dark btn-sm mb-5"><i class="fas fa-caret-left"></i> Voltar </a>
 
 <form method="POST">
 	<div class="form-group">

@@ -33,9 +33,6 @@ function logout(){
 
 
 
-
-
-
 //FUNÇÕES DE LOGIN DO USUÁRIO
 
 function get_user(){
