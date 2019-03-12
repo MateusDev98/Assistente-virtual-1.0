@@ -4,10 +4,10 @@
 
 protect_login();
 
-
 //Verificando se as páginas existem
 //Verificamos se foi solicitado a página inicial e exibimos 
 if(resolved('/')){
+	
 	render('/site/home','site');
 //Verficamos se foi solicitado a pagina contact e exibimos
 }elseif(resolved('/into_contact')){
@@ -15,8 +15,14 @@ if(resolved('/')){
 	render('/site/into_contact','site');
 
 }elseif(resolved('/view_tickets')){
-
+	// require __DIR__ . '/../source/tickets.php';
+	
 	render('/site/view_tickets','site');
+
+}elseif(resolved('/get_tickets')){
+	require __DIR__ . '/../source/get_tickets.php';
+	
+	//render('/site/get_tickets','site');
 
 }
 elseif(resolved('/edit')){

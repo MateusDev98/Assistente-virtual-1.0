@@ -1,9 +1,9 @@
 <?php 
 #Motor do site, estrutura de navegação
 
-ini_set('display_errors',1);
-ini_set('display_startup_erros',1);
-error_reporting(E_ALL);
+// ini_set('display_errors',1);
+// ini_set('display_startup_erros',1);
+// error_reporting(E_ALL);
 
 session_start();
 
@@ -29,6 +29,11 @@ require __DIR__.'/source/flash.php';
 
 //Manipular login
 require __DIR__.'/source/auth.php';
+
+//Chama o arquivo tickets
+// require __DIR__ . '/source/tickets.php';
+
+// require __DIR__. '/source/boletosPHP.php';
 
 
 //Verificando se as páginas existem e exibimos

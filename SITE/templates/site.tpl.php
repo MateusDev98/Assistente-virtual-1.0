@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> TicketOut </title>
 <!-- Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/resources/fontawesome/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="/resources/pnotify/pnotify.custom.min.css">
@@ -45,7 +46,8 @@
 			</div>
 		</nav>
 	</header> 
-<?php require $content ?>
+
+<?php require $content; ?>
 	<footer class='col-sm-18'>
 		<label class="footer_content">Copyright
 		<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true" style="color: #fff; font-size: 10px"></span>
@@ -53,7 +55,6 @@
 	</footer>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><!--linkando com o JS externo-->
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><!--linkando com o JS externo-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script src="/resources/pnotify/pnotify.custom.min.js"></script>
 	<script>
